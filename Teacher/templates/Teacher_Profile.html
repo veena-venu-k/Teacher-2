@@ -1,0 +1,40 @@
+<body>
+    {% block content %}
+    <h1>Teacher Profile</h1>
+    
+    {% if show %}
+    <table>
+      <tr>
+        <th style="color:red"><u>First Name</u></th>
+        <th style="color:red"><u>Last Name</u></th>
+        <th style="color:red"><u>Profile Picture</u></th>
+        <th style="color:red"><u>Email Address </u></th>
+        <th style="color:red"><u>Phone Number</u></th>
+        <th style="color:red"><u>Room Number</u></th>
+        <th style="color:red"><u>Subjects Taught</u></th>
+       
+      </tr> 
+      
+
+      <tr>
+        <td><u>{{show.First_Name}}</u></td>
+        <td><u>{{show.Last_Name}}</u></td>
+        <td><u>{{show.Profile_Picture}}</u></td>
+        <td><u>{{show.Email_Address}}</u></td>
+        <td><u>{{show.Phone_Number}}</u></td>
+        <td><u>{{show.Room_Number}}</u></td>
+        <td><u>{{show.Subjects_taught}}</u></td>
+       
+      </tr> 
+   
+      
+    </table>
+
+    {% else %}
+    <h1>No Data</h1>
+  {% endif %} 
+
+     
+    
+    {% endblock %}
+    </body>
